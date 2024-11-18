@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Table Cell on Click</title>
+</head>
+<body>
+
+<table id="myTable" border="1">
+  <tr>
+    <td>Existing Cell</td>
+  </tr>
+</table>
+
+<!-- Button to add a new cell -->
+<button id="addCellBtn">Add New Cell</button>
+
+<script>
+  // Get references to the button and the table row
+  const addCellBtn = document.getElementById("addCellBtn");
+  const tableRow = document.querySelector("#myTable tr");
+
+  // Function to create a new <td> with color
+  function createColoredTd() {
+    // Create a new <td> element
+    const newTd = document.createElement("td");
+
+    // Set text content for the <td>
+    newTd.textContent = "New Colored Cell";
+
+    // Apply a background color and border to the <td>
+    newTd.style.backgroundColor = "lightblue";
+    newTd.style.border = "2px solid black";
+
+    // Append the new <td> to the table row
+    tableRow.appendChild(newTd);
+  }
+
+  // Add an event listener to the button
+  addCellBtn.addEventListener("click", createColoredTd);
+</script>
+
+</body>
+</html>
