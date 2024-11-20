@@ -180,28 +180,6 @@
         };
 
     
-//  //translation   
-
-//         window.onload = () => {
-
-//           let savedLanguage = localStorage.getItem("language");
-           
-//           setLanguage(savedLanguage);
-        
-        
-        
-//         };
-
-            
-//     function setLanguage(language) {
-   
-//      document.getElementById("printhead").textContent = transalation[language].printhead;
-//      document.getElementById("butondownload").textContent = transalation[language].butondownload;
-
-    
-//    };
-  
-//   //  JSON.parse(localStorage.getItem("transalation"));
 
 window.onload = () => {
 
@@ -211,9 +189,19 @@ window.onload = () => {
 
   document.getElementById("printhead").textContent = transalation[savedLanguage].printhead;
   document.getElementById("butondownload").textContent = transalation[savedLanguage].butondownload;
+  document.getElementById("homebtn").textContent = transalation[savedLanguage].redirect;
  
 
 
 };
 
- 
+
+
+// redirect to home page
+
+document.getElementById("homebtn").addEventListener("click",()=>{
+
+  location.reload();
+  myColorList.length=0;
+  window. location. href ="index.html";
+ });

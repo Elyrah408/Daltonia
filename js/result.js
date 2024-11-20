@@ -472,7 +472,7 @@ document.getElementById("copyButton1").addEventListener("click", function () {
   // Copy the text to the clipboard
   navigator.clipboard.writeText(textToCopy).then(() => {
     // Display success message
-    document.getElementById("valuedue").textContent = "copied to clipboard!";
+    document.getElementById("valuedue").textContent = "copied!";
   })
 });
 
@@ -483,7 +483,7 @@ document.getElementById("copyButton2").addEventListener("click", function () {
   // Copy the text to the clipboard
   navigator.clipboard.writeText(textToCopy).then(() => {
     // Display success message
-    document.getElementById("valuetit").textContent = "copied to clipboard!";
+    document.getElementById("valuetit").textContent = "copied!";
   })
 });
 
