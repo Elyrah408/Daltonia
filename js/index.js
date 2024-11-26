@@ -24,6 +24,13 @@ const pupilMaxDistanceX = 20;
 const pupilMaxDistanceY = 8;
 
 
+let myinfo = document.getElementById("infos");
+myinfo.addEventListener("click",()=>{
+    window. location. href ="about.html";
+
+});
+
+
 function resetPosition() {
     iris.style.transform = "translate(0, 0)";
     pupil.style.transform = "translate(0, 0)";
@@ -164,7 +171,7 @@ function setLanguage(language) {
 JSON.parse(localStorage.getItem("transalation"));
 
 
-
+// ---info----button
 
 
   

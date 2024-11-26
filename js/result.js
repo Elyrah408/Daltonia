@@ -5,7 +5,11 @@ let divArray = [];
 let colorButton = document.getElementById("colorButton3");
 let colorPicker = document.getElementById("colorPicker");
 
+let myinfo = document.getElementById("infos");
+myinfo.addEventListener("click",()=>{
+    window. location. href ="about.html";
 
+});
 
 let storedBlogs = JSON.parse(localStorage.getItem('homeColorSelection'));
 storedBlogs.forEach(myvalueinput => {
